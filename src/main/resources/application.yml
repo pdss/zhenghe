@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/login
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      username: guest
+      password: guest
+  redis:
+    database: 2
+    host: localhost
+    port: 6379
+    timeout: 2000
+logging:
+  level:
+    root: info
+    com.st.zhenghe.mapper: debug

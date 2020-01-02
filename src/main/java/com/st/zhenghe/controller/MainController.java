@@ -43,6 +43,7 @@ public class MainController {
     @PostMapping("/login")
     public ResultVO doLogin(HttpServletResponse response,LoginForm loginForm){
         System.out.println(loginForm.toString());
+        System.out.println(loginForm.toString());
         User user = userService.queryByUsername(loginForm.getUsername());
         if(user==(null)) {
             throw new MyException(ResultEnum.USER_OR_PASSWORD_ERROR);
